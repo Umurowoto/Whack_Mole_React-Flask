@@ -13,7 +13,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv("DATABASE_URL")
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 
-CORS(app, origins=["http://localhost:5173"])
+CORS(app, origins=["https://whack-mole-react-flask.vercel.app"])
 
 db.init_app(app)
 migrate = Migrate(app, db)
